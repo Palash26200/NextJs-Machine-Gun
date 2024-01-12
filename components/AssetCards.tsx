@@ -66,10 +66,10 @@ export default function AssetCards() {
         <Pagination>
             <PaginationContent>
                 <PaginationItem className="cursor-pointer">
-                    <PaginationPrevious onClick={onPrevious}/>
+                    <PaginationPrevious className="hover:bg-yellow-100" onClick={onPrevious}/>
                 </PaginationItem>
                 <PaginationItem className="cursor-pointer">
-                    <PaginationNext onClick={onNext}/>
+                    <PaginationNext className="hover:bg-yellow-100" onClick={onNext}/>
                 </PaginationItem>
             </PaginationContent>
         </Pagination>
