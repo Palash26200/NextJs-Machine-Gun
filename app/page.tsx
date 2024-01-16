@@ -1,7 +1,7 @@
 import AssetCards from "@/components/AssetCards"
-import AssetTable from "@/components/AssetTable/AssetTable"
 import Hero from "@/components/Hero"
-import { Card } from "@/components/ui/card"
+
+export const prefixUrl = "/web"
 
 export default function Home() {
   return (

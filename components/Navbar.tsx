@@ -4,6 +4,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation';
 import { Laptop } from 'lucide-react'
 import nav_links from "@/public/constants/nav_links";
+import { prefixUrl } from '@/app/page';
 
 const Navbar = () => {
     const pathname = usePathname();
@@ -18,11 +19,11 @@ const Navbar = () => {
             {nav_links.map((link, idx) => (
                 <div key={idx}>
                     {pathname === link.href ? (
-                        <Link className='capitalize text-lg font-semibold text-primary' href={link.href}>
+                        <Link className='capitalize text-lg font-semibold text-primary' href={prefixUrl+"/"+link.href}>
                             {link.name}
                         </Link>
                     ) : (
-                        <Link className='capitalize text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary' href={link.href}>
+                        <Link className='capitalize text-lg font-semibold text-gray-600 transition duration-100 hover:text-primary' href={prefixUrl+"/"+link.href}>
                             {link.name}
                         </Link>
                     )}
