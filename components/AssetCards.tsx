@@ -5,8 +5,6 @@ import assets from "@/data/assets";
 import {
   Pagination,
   PaginationContent,
-  PaginationItem,
-  PaginationLink,
   PaginationNext,
   PaginationPrevious,
 } from "@/components/ui/pagination";
